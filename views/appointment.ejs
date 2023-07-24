@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>header</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+
+  <div style="display: inline;" class="header">
+    <div>
+        <ul style="display: flex; margin-top: 35px; margin-left: 60px; justify-content: left; list-style:none">
+            <li><img style="margin-top:10px; width:50px; height: 50px; margin-right: 30px;" src="https://cdn.dribbble.com/users/1573719/screenshots/16965629/media/836e46c8826ecefbcd1f71e678ed03de.png?compress=1&resize=400x300&vertical=center"></li>
+            <a style="text-decoration: none;" href="/home"><li style="margin-right: 20px;" class="display-5 fw-bold text-body-emphasis lh-1 mb-3" >Home</li></a>
+            <a style="text-decoration: none;" href="/services"><li style="margin-right: 20px;" class="display-5 fw-bold text-body-emphasis lh-1 mb-3>">Services</li></a>
+            <div class="btn-group">
+              <li class="display-5 fw-bold text-body-emphasis lh-1 mb-3 dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                About
+              </li>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/about">Mission & Vision</a></li>
+                <li><a class="dropdown-item" href="/blog">Blog</a></li>
+              </ul>
+            </div>
+        </ul>
+
+        <div style="display: flex; justify-content: right; list-style:none">
+          
+            <button type="submit" style="margin-right: 20px;" class="btn btn-warning"><a style="color: black; text-decoration: none;" href="/register">Login</a></button>
+        
+            <button type="button" style="margin-right: 20px; " class="btn btn-outline-warning"><a style="color: black; text-decoration: none;" href="tel:+9667598287">Call Now</a></button>
+        </div>
+
+    </div>
+</div>
+   
+    <hr/>
+    <div style="margin-top: 10px;" class="container">
+        <main>
+          <div class="container" style="margin-left: 350px;">
+            <button style="width: 500px; height: 100px; font-size: x-large;" class="btn btn-warning rounded-pill " type="button">Book an appointment</button>
+            <br/>
+            <form>
+      
+                  <div class="col-md-5">
+                    <label for="country" class="form-label">Country</label>
+                    <select class="form-select" id="country" required="">
+                      <option value="">Choose...</option>
+                      <option>India</option>
+                      
+                    </select>
+                    <div class="invalid-feedback">
+                      Please select a valid country.
+                    </div>
+                  </div>
+      
+                  <div class="col-md-5">
+                    <label for="state" class="form-label">State</label>
+                    <select class="form-select" id="state" required="">
+                      <option value="">Choose...</option>
+                      <option>Mumbai</option>
+                      <option>Delhi</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      Please provide a valid state.
+                    </div>
+                  </div>
+                  
+                  <div class="col-md-5">
+                    <label for="service" class="form-label">Service</label>
+                    <select class="form-select" id="service" required="">
+                      <option value="">Choose...</option>
+                      <option>Consultation</option>
+                      <option>Dentistry</option>
+                      <option>Eyecare</option>
+                      <option>Vaccination</option>
+                      <option>Pathology</option>
+                      <option>Pet Boarding</option>
+                      
+                    </select>
+                    <div class="invalid-feedback">
+                      Please select a valid service.
+                    </div>
+                  </div>
+
+                  <div class="col-md-5">
+                    <label for="day" class="form-label">Date</label>
+                    <br/>
+                    <input type="date" id="date" name="date" required="">
+                      
+                    </select>
+                    <div class="invalid-feedback">
+                      Please select a valid date.
+                    </div>
+                  </div>
+
+                  <div class="col-md-5">
+                    <label for="service" class="form-label">Time</label>
+                    <select class="form-select" id="service" required="">
+                      <option value="">Choose...</option>
+                      <option>10:00 AM</option>
+                      <option>11:00 AM</option>
+                      <option>12:00 PM</option>
+                      <option>01:00 PM</option>
+                      <option>02:00 PM</option>
+                      <option>04:00 PM</option>
+                      <option>05:00 PM</option>
+                      <option>06:00 PM</option>
+                      <option>07:00 PM</option>
+                      <option>08:00 PM</option>
+                      <option>09:00 PM</option>
+                      
+                    </select>
+                    <div class="invalid-feedback">
+                      Please select a valid date.
+                    </div>
+                  </div>
+                  <br/>
+      
+                <button class="w-20 btn btn-success " type="submit" on >Continue to checkout</button>
+            </form>
+           
+          </div>
+          
+        </main>
+      
+        
+      </div>
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item"><a href="/home" class="nav-link px-2 text-muted">Home</a></li>
+          <li class="nav-item"><a href="/about" class="nav-link px-2 text-muted">Features</a></li>
+          <li class="nav-item"><a href="/packages" class="nav-link px-2 text-muted">Packages</a></li>
+          <li class="nav-item"><a href="/about" class="nav-link px-2 text-muted">About</a></li>
+        </ul>
+        <p class="text-center text-muted">© 2022 Company, Inc</p>
+      </footer>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
